@@ -1,0 +1,295 @@
+.body1 {
+  background-image: url("../images/renz.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.body2 {
+  background-image: url("../images/l1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust the alpha value as desired */
+}
+
+body {
+    background-color: #2b93e4; /* Light blue */
+    color: #333333; /* Dark gray */
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2, h3, h4 {
+    color: #004080; /* Dark blue */
+  }
+  
+  p {
+    color: #333333; /* Dark gray */
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #004080; /* Dark blue */
+  }
+  
+  input[type="text"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #dddddd; /* Light gray */
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"],
+  button {
+    background-color: #004080; /* Dark blue */
+    color: #cae7c2; /* White */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover,
+  button:hover {
+    background-color: #bdd0e2; /* Darker blue */
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+
+  
+  body.body1 {
+    background-color: #366d97; /* Light blue */
+    color: #333333; /* Dark gray */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #004080; /* Dark blue */
+  }
+  
+  p.address {
+    color: #004080; /* Dark blue */
+    margin-bottom: 5px;
+  }
+  
+  p.phone, p.email, p.website {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: #008000; /* Dark green */
+  }
+  
+  a:hover {
+    color: #004d00; /* Darker green */
+  }
+  
+  body {
+  background-color: #e6f4ff; /* Light blue */
+  color: #333333; /* Dark gray */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #004080; /* Dark blue */
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+
+li {
+  color: skyblue;
+}
+.p1 {
+  color: rgb(86, 245, 86);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+body.body2 {
+    background-color: #e6f4ff; /* Light blue */
+    color: #333333; /* Dark gray */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #004080; /* Dark blue */
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    margin-left: 20px;
+  }
+  
+  img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: 10px;
+  }
+  
+  
+/* CSS styles for videos */
+.video-container {
+  display: inline-block;
+  width: 400px;
+  height: 350px;
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(5, 61, 5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: rgb(8, 99, 160);
+}
+
+/* Add some padding to the body to prevent content from being hidden behind the navbar */
+body {
+  padding-top: 40px;
+}
+div {
+  display: inline-block;
+  width: 45%;
+  margin: 10px;
+
+}
+
+div img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.div1 {
+  padding: 20px;
+  color: rgb(4, 48, 143);
+  transition: background-color 0.3s ease-in-out;
+  text-size-adjust: initial;
+}
+
+.div1:hover {
+  background-color: rgba(0, 128, 0, 0.7);
+}
+
+.div1 p {
+  margin-top: 20px;
+}
+
+.form {
+  padding-left: 40px;
+}
+.form :hover {
+  background-color: rgba(9, 51, 68, 0.7);
+}
+.bod1 {
+  padding: inherit;
+  background-image: linear-gradient(45deg, rgba(0, 100, 255, 0.8) 0%, rgba(0, 200, 150, 0.6) 50%, rgba(0, 255, 100, 0.4) 100%);
+  background-size: 100% 100%;
+}
+
+
+
+.header-image {
+  background-image: url("../images/nile.png");
+  background-size: cover;
+  background-position: top left;
+  width: 100%;
+  height: 50vh; /* Adjust the height as needed */
+}
+
+
+p.me {
+  background-color: lightblue;
+}
+
+p.y {
+  background-color: rgb(129, 193, 214);
+}
+
+.v1 {
+  position: absolute;
+  top: 150;
+  right: 0;
+  width: 100px;
+  height: 500px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.v1 {
+  width: 40%;
+  height: 30%;
+}
+
+.n {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.n:hover {
+  background-color: green;
+}

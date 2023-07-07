@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowing Uganda</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'images/renz.png' %}" type="image/x-icon">
+</head>
+<body class="bod1">
+    <nav class="b1">
+        <ul class="navbar">
+            <li><a href="../travel/places">Places</a></li>
+            <li><a href="../travel/ContactUs">Contact Us</a></li>
+            <li><a href="../travel/AboutUs">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="header-image">
+        <img src="{% static 'images/nile.png' %}" alt="River Nile">
+    </div>
+<h1> KNOWING UGANDA TOURS AND TRAVEL, WELCOME.!!😀😃😀😃</h1>
+    <p class="me">We are belated to have you served by our experienced team. We are glad and humbled that you have chosen us and we want to show our appreciation by giving you special service at all times. You can also join our community on our social media platforms!</p>
+    <div>
+        <div>
+            <img src="{% static 'images/edir.png' %}" alt="Executive Director - Mr. Ssejemba Kennedy Faustin">
+            <h2>Executive Director</h2>
+            <p>Mr. Ssejemba Kennedy Faustin</p>
+        </div><br><br>
+
+        <p class="pot1">We are excited to introduce our tours and travel/religious pilgrimages and team-building organization. Our well-established firm is run by people who have worked in the travel industry for over 8 years. Different institutions have recognized our facilitators for offering cooperative team-building and experiential learning. We strive to provide our clients with high-quality, efficient services. We pride ourselves on being forward-thinking, inventive, and efficient, and we look forward to displaying these traits as possible. Thank you for taking the time to read this.</p>
+
+        <p class="pot">Over 20 years' experience working with both the private and not-for-profit sectors undertaking a range of interventions in business development, strategy formulation and review, research, project monitoring and evaluation, and capacity building in Uganda, Kenya, Rwanda, Burundi, Tanzania, South Sudan, Malawi, and Ethiopia. Kennedy has also lectured at various reputable institutions in Uganda in the areas of marketing, strategy, entrepreneurship, project monitoring & evaluation for the last 10 years. These institutions include: Uganda Management Institute, Makerere University, and Uganda Martyrs University. Kennedy is currently the Managing Director of 3A Strategic Management Consultants Ltd, a management consultancy firm based in Kampala with over 20 years' experience offering business development support services to both the private and not-for-profit sectors in Uganda and within Africa. Kennedy has a Doctor of Business Administration-Swiss School of Management (Switzerland), Master of Philosophy (Maastricht School of Management Netherlands), MBA (MUK), and a Bcom (MUK).</p>
+        </div>
+            <div class="b1">
+            <h2> <p class="y">OUR MISSION:</p></h2>
+                <p class="y"    >To deliver quality services to the clients, questing their entire gratitude and committing to the social, cultural, religious, and environmental reality to our country.</p>
+        <br><br><br><br><br><br><br><br>
+                <h2><p class="y">OUR VISION:</p></h2>
+                <p class="y">To be innovators, leaders, and creative in the concept of travel and pilgrimage, positioning our company in the market within the best tourism companies in Africa, physically recognized for our professionalism and high-quality services.</p>
+    </div>
+
+    <form class="form"><div>
+        <img src="{% static 'images/renz.png' %}" alt="Executive Director - Mr. Ssejemba Kennedy Faustin">
+        <h1>OUR SERVICES:</h1>
+        <h2>Services</h2>
+        <h4>1. Pilgrimage tours:</h4>
+        <ul>
+            <li>Kiwamirembe</li>
+            <li>Munyonyo Martyrs Shrine</li>
+            <li>Namugongo Martyrs Shrine</li>
+            <li>Kigungu landing site</li>
+            <li>Katoosa</li>
+        </ul>
+        <div class="v1">
+            <video src="{% static 'videos/vid3.mp4' %}" autoplay muted loop></video>
+        </div>
+        <h4>2. Country Tours:</h4>
+        <p>i. National Parks</p>
+        <ul>
+            <li>Murchison Falls</li>
+            <li>Lake Mburo</li>
+            <li>Kidepo</li>
+            <li>Semuliki</li>
+            <li>Lake Bunyonyi</li>
+            <li>Queen Elizabeth</li>
+        </ul>
+
+        <p>ii. City tours:</p>
+        <ul>
+            <li>Jinja</li>
+            <li>Kampala</li>
+            <li>Entebbe</li>
+            <li>Mbale</li>
+        </ul>
+
+        <p>iii. Mountains:</p>
+        <ul>
+            <li>Rwenzori</li>
+            <li>Elgon</li>
+            <li>Others...</li>
+        </ul></div>
+    </form>
+    <h3>Customer Feedback</h3>
+<ul>
+    {% for feedback in feedback_list %}
+    <li>
+        <strong>{{ feedback.customer_name }}</strong>
+        <p>{{ feedback.country }}</p>
+        <p>{{ feedback.service_views }}</p>
+        <p>Rating: {{ feedback.rating }}</p>
+    </li>
+    {% endfor %}
+</ul>
+
+
+<form method="POST" action="{% url 'welcome' %}">
+    {% csrf_token %}
+    <label for="customer_name">Customer Name:</label>
+    <input type="text" id="customer_name" name="customer_name" required><br>
+
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" required><br>
+
+    <label for="service_views">Customer Service Views:</label>
+    <textarea id="service_views" name="service_views" rows="4" cols="50" required></textarea><br>
+
+    <label for="rating">Rating:</label>
+    <select id="rating" name="rating" required>
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Very Good</option>
+        <option value="3">3 - Good</option>
+        <option value="2">2 - Fair</option>
+        <option value="1">1 - Poor</option>
+    </select><br>
+
+    <input type="submit" value="Submit" class="n">
+</form>
+
+</body>
+</html>
+

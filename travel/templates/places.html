@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places - Knowing Uganda</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'images/renz.png' %}" type="image/x-icon">
+</head>
+<body class="body2">
+    <nav>
+        <ul class="navbar">
+            <li><a href="../travel">Welcome</a></li>
+            <li><a href="../travel/ContactUs">Contact Us</a></li>
+            <li><a href="../travel/AboutUs">About Us</a></li>
+        </ul>
+    </nav>
+    <h1>Market</h1>
+    <p>Market description goes here.</p>
+
+    <h2>Videos</h2>
+    <div class="video-container">
+        <video src="{% static 'videos/vid1.mp4' %}" controls></video>
+    </div>
+    <div class="video-container">
+        <video src="{% static 'videos/vid2.mp4' %}" controls></video>
+    </div>
+    <div class="video-container">
+        <video src="{% static 'videos/vid3.mp4' %}" controls></video>
+    </div>
+
+    <h2>Country Tours</h2>
+    <p class="p1">i. National Parks</p>
+    <ul>
+        <li>Murchison Falls</li>
+        <li>Lake Mburo</li>
+        <li>Kidepo</li>
+        <li>Semuliki</li>
+        <li>Lake Bunyonyi</li>
+        <li>Queen Elizabeth</li>
+    </ul>
+
+    <p class="p1">ii. City Tours</p>
+    <ul>
+        <li>Jinja</li>
+        <li>Kampala</li>
+        <li>Entebbe</li>
+        <li>Mbale</li>
+    </ul>
+
+    <p class="p1">iii. Mountains</p>
+    <ul>
+        <li>Rwenzori</li>
+        <li>Elgon</li>
+        <li>Others</li>
+    </ul>
+
+    <h3>Pilgrimage Tours</h3>
+    <ul>
+        <li>Kiwamirembe</li>
+        <li>Munyonyo Martyrs Shrine</li>
+        <li>Namugongo Martyrs Shrine</li>
+        <li>Kigungu landing site</li>
+        <li>Katoosa</li>
+    </ul>
+
+    <p class="p1">Additional content goes here.</p>
+    <img src="{% static 'images/p1.png" ' %}alt="Image 1">
+
+</body>
+</html>
